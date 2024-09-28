@@ -10,6 +10,9 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.card img:hover.date {
+    transform: scale(1.5);
+  }
 .card img{
     max-height: 400px;
 }

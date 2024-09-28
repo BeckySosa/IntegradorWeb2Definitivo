@@ -11,8 +11,8 @@ html(lang="en")
     .grid
       each object in objects
         .card
-          img(src=object.primaryImage && object.primaryImage != '' ? object.primaryImage : '/imagenes/imgPorDdefect.jpeg' alt=object.title || 'Sin título')
-          .date Fecha: #{object.objectDate || 'Desconocida'}
+          img(src=object.primaryImage && object.primaryImage != '' ? object.primaryImage : '/imagenes/imgPorDdefect.jpeg' alt=object.title || 'Sin título' title='Fecha '+ object.objectDate)
+          
           h3= object.title || 'Sin título'
           p Cultura: #{object.culture || 'Desconocida'}
           p Dinastía: #{object.dynasty || 'Desconocida'}
