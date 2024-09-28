@@ -27,14 +27,14 @@ app.get("/",async (req,res)=>{
                 displayName:departmentTraducido
             }
         } catch (error) {
-            console.Error("Error al traducir",error)
+            console.Error("Error al traducir" +error)
             return department
         }
     }))
     res.render("index",{ departmentsTraducidos })
     
     } catch (error) {
-        console.Error("Error al traducir departamento",error)
+        console.Error("Error al traducir departamento"+error)
         res.status(500).send("Error del servidor al conectarse")
     }
     
